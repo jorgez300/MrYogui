@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "next build && next start",
     "lint": "next lint",
     "docker:clean": "docker stop MrYogui && docker rm MrYogui && docker rmi mryogui-image",
     "docker:build": "docker build -t mryogui-image . && docker run --name MrYogui -p 22001:3000 mryogui-image",
