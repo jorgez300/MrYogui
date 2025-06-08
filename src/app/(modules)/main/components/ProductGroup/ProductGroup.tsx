@@ -36,7 +36,7 @@ export const ProductGroup = (props: ProductGroupProps) => {
   ];
 
   return (
-    <section id={`productGrupo${props.id}`} className="mt-8">
+    <section id={`productGrupo${props.id}`} className="mb-8 scroll-mt-22">
       <div className="grid grid-cols-12 gap-4 p-4">
         <div className="col-span-4  align-content-center flex justify-center items-center">
           <Separator />
