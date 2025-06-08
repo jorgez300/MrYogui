@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next build && next start",
+    "start": "next start",
     "lint": "next lint",
     "docker:clean": "docker stop MrYogui && docker rm MrYogui && docker rmi mryogui-image",
     "docker:build": "docker build -t mryogui-image . && docker run --name MrYogui -p 22001:3000 mryogui-image",
@@ -13,6 +13,8 @@
   },
   "dependencies": {
     "@radix-ui/react-dropdown-menu": "^2.1.15",
+    "@radix-ui/react-navigation-menu": "^1.2.13",
+    "@radix-ui/react-separator": "^1.1.7",
     "@radix-ui/react-slot": "^1.2.3",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
