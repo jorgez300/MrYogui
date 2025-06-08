@@ -42,9 +42,9 @@ export const NavMenu = () => {
     <NavigationMenu viewport={false}>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="w-[600px] h-fit text-xl font-bold">Menu</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="text-xl font-bold">Menu</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="w-[600px] gap-4 align-content-center flex justify-center">
+            <ul className="">
               <li className="w-full">
                 {groups.map((group, index) => (
                   <NavigationMenuLink key={index} asChild>

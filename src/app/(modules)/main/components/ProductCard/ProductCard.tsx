@@ -52,7 +52,7 @@ export const ProductCard = (props: ProductCardProps) => {
                   <SheetTrigger asChild>
                     <Button>Detalle</Button>
                   </SheetTrigger>
-                  <SheetContent className="w-[1500px]">
+                  <SheetContent className="w-[85vw] md:w-[50vw]">
                     <SheetHeader className="h-full">
                       <SheetTitle></SheetTitle>
                       <SheetDescription asChild>
