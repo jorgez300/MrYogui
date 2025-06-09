@@ -1,0 +1,22 @@
+[
+  {
+    "id": "Combo",
+    "dsc": "Combos"
+  },
+  {
+    "id": "Oferta",
+    "dsc": "Ofertas"
+  },
+  {
+    "id": "Hamburguesa",
+    "dsc": "Hamburguesas"
+  },
+  {
+    "id": "HotDog",
+    "dsc": "Hot Dogs"
+  },
+  {
+    "id": "Pizza",
+    "dsc": "Pizzas"
+  }
+]

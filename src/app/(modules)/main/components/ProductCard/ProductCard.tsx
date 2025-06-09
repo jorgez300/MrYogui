@@ -14,12 +14,13 @@ import {
   SheetTitle,
   SheetDescription,
 } from "@/components/ui/sheet";
+import { Product } from "@/domain/models/Product";
 
 import Image from "next/image";
 
 interface ProductCardProps {
   index: number;
-  src: string;
+  product: Product;
 }
 
 export const ProductCard = (props: ProductCardProps) => {
@@ -32,8 +33,8 @@ export const ProductCard = (props: ProductCardProps) => {
         <CardHeader>
           <Image
             key={props.index}
-            src={props.src}
-            alt={`Gallery ${props.index}`}
+            src={props.product.src}
+            alt={`Gallery ${props.product.title}`}
             width={300}
             height={300}
             className="w-full h-auto rounded-lg shadow-md"
@@ -41,10 +42,10 @@ export const ProductCard = (props: ProductCardProps) => {
         </CardHeader>
         <CardContent>
           <CardTitle className="text-xl font-bold">
-            Yogui Burger {props.index}
+            {props.product.title}
           </CardTitle>
           <CardDescription className="">
-            <p>Esta es una descripción breve del contenido.</p>
+            <p>{props.product.dsc ?? ""}</p>
 
             <div className="grid grid-cols-2 gap-4 mt-4">
               <div className="align-content-start flex justify-start items-center">
@@ -60,7 +61,7 @@ export const ProductCard = (props: ProductCardProps) => {
                           <div>
                             <Image
                               key={props.index}
-                              src={props.src}
+                              src={props.product.src}
                               alt={`Gallery ${props.index}`}
                               width={300}
                               height={300}
@@ -69,15 +70,15 @@ export const ProductCard = (props: ProductCardProps) => {
                           </div>
                           <div>
                             <h1 className="text-2xl font-bold">
-                              Yogui Burger {props.index}
+                              {props.product.title}
                             </h1>
                           </div>
                           <div>
-                            <p>Esta es una descripción breve del contenido.</p>
+                            <p>{props.product.dsc ?? ""}</p>
                           </div>
                           <div>
                             <p className="text-end font-semibold text-lg">
-                              Precio: 10$
+                              Precio: {props.product.price}$
                             </p>
                           </div>
                         </div>
@@ -87,7 +88,7 @@ export const ProductCard = (props: ProductCardProps) => {
                 </Sheet>
               </div>
               <div className="align-content-end flex justify-end items-center">
-                <p className="text-end font-semibold text-lg">Precio: 10$</p>
+                <p className="text-end font-semibold text-lg">Precio: {props.product.price}$</p>
               </div>
             </div>
           </CardDescription>

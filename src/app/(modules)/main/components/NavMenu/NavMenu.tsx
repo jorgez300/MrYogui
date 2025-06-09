@@ -11,38 +11,30 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
-
+import { ProductGroups } from "@/domain/models/ProductGroup";
+import { GetProductGroups } from "@/domain/services/ProductGroup.service";
 
 export const NavMenu = () => {
+  const [groups, setgroups] = React.useState<ProductGroups[]>([]);
 
-  const groups = [
-    {
-      id: "Combo",
-      dsc: "Combos",
-    },
-    {
-      id: "Oferta",
-      dsc: "Ofertas",
-    },
-    {
-      id: "Hamburguesa",
-      dsc: "Hamburguesas",
-    },
-    {
-      id: "HotDog",
-      dsc: "Hot Dogs",
-    },
-    {
-      id: "Pizza",
-      dsc: "Pizzas",
-    },
-  ];
+  React.useEffect(() => {
+    GetProductGroups()
+      .then((data) => {
+        setgroups(data);
+      })
+      .catch((error) => {
+        console.error("Error fetching product groups:", error);
+      });
+  }, []);
+
 
   return (
     <NavigationMenu viewport={false}>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="text-xl font-bold">Menu</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="text-xl font-bold">
+            Menu
+          </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="">
               <li className="w-full">

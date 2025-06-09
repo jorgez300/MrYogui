@@ -1,36 +1,35 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import { Navbar } from "./(modules)/main/components/NavBar/NavBar";
 import { ProductGroup } from "./(modules)/main/components/ProductGroup/ProductGroup";
+import { GetProductGroups } from "@/domain/services/ProductGroup.service";
+import { ProductGroups } from "@/domain/models/ProductGroup";
 
 export default function Home() {
-  const groups = [
-    {
-      id: "Combo",
-      dsc: "Combos",
-    },
-    {
-      id: "Oferta",
-      dsc: "Ofertas",
-    },
-    {
-      id: "Hamburguesa",
-      dsc: "Hamburguesas",
-    },
-    {
-      id: "HotDog",
-      dsc: "Hot Dogs",
-    },
-    {
-      id: "Pizza",
-      dsc: "Pizzas",
-    },
-  ];
+  const [groups, setgroups] = useState<ProductGroups[]>([]);
+
+  useEffect(() => {
+    GetProductGroups()
+      .then((data) => {
+        setgroups(data);
+      })
+      .catch((error) => {
+        console.error("Error fetching product groups:", error);
+      });
+  }, []);
 
   return (
     <>
       <Navbar />
       <div className="grid grid-cols-1 gap-4 p-4">
         {groups.map((group, index) => (
-          <ProductGroup key={index} index={index} id={group.id} dsc={group.dsc} />
+          <ProductGroup
+            key={index}
+            index={index}
+            id={group.id}
+            dsc={group.dsc}
+          />
         ))}
       </div>
     </>

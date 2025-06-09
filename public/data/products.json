@@ -1,0 +1,134 @@
+[
+  {
+    "id": "Combo1",
+    "title": "Combos",
+    "dsc": "Combo1 con papitas",
+    "price": 10,
+    "src": "/Combos.png",
+    "group": "Combo"
+  },
+  {
+    "id": "Combo2",
+    "title": "Combos",
+    "dsc": "Combo1 con papitas",
+    "price": 10,
+    "src": "/Combos.png",
+    "group": "Combo"
+  },
+  {
+    "id": "Combo3",
+    "title": "Combos",
+    "dsc": "Combo1 con papitas",
+    "price": 10,
+    "src": "/Combos.png",
+    "group": "Combo"
+  },
+  {
+    "id": "Combo4",
+    "title": "Combos",
+    "dsc": "Combo1 con papitas",
+    "price": 10,
+    "src": "/Combos.png",
+    "group": "Combo"
+  },
+  {
+    "id": "Combo5",
+    "title": "Combos",
+    "dsc": "Combo1 con papitas",
+    "price": 10,
+    "src": "/Combos.png",
+    "group": "Combo"
+  },
+
+  {
+    "id": "Oferta1",
+    "title": "Combos",
+    "dsc": "Combo1 con papitas",
+    "price": 10,
+    "src": "/Ofertas.png",
+    "group": "Oferta"
+  },
+  {
+    "id": "Oferta2",
+    "title": "Combos",
+    "dsc": "Combo1 con papitas",
+    "price": 10,
+    "src": "/Ofertas.png",
+    "group": "Oferta"
+  },
+  {
+    "id": "Oferta3",
+    "title": "Combos",
+    "dsc": "Combo1 con papitas",
+    "price": 10,
+    "src": "/Ofertas.png",
+    "group": "Oferta"
+  },
+  {
+    "id": "Oferta4",
+    "title": "Combos",
+    "dsc": "Combo1 con papitas",
+    "price": 10,
+    "src": "/Ofertas.png",
+    "group": "Oferta"
+  },
+  {
+    "id": "Oferta5",
+    "title": "Combos",
+    "dsc": "Combo1 con papitas",
+    "price": 10,
+    "src": "/Ofertas.png",
+    "group": "Oferta"
+  },
+
+  {
+    "id": "Hamburguesa1",
+    "title": "Pizzas",
+    "dsc": "Combo1 con papitas",
+    "price": 10,
+    "src": "/burger.png",
+    "group": "Hamburguesa"
+  },
+  {
+    "id": "Hamburguesa2",
+    "title": "Pizzas",
+    "dsc": "Combo1 con papitas",
+    "price": 10,
+    "src": "/burger.png",
+    "group": "Hamburguesa"
+  },
+
+  {
+    "id": "HotDog1",
+    "title": "Hot Dogs 1",
+    "dsc": "Combo1 con papitas",
+    "price": 10,
+    "src": "/HotDog.png",
+    "group": "HotDog"
+  },
+  {
+    "id": "HotDog2",
+    "title": "Hot Dogs 2",
+    "dsc": "Combo1 con papitas",
+    "price": 10,
+    "src": "/HotDog.png",
+    "group": "HotDog"
+  },
+
+  {
+    "id": "Pizza1",
+    "title": "Pizzas",
+    "dsc": "Combo1 con papitas",
+    "price": 10,
+    "src": "/Pizza.png",
+    "group": "Pizza"
+  },
+  {
+    "id": "Pizza2",
+    "title": "Pizzas",
+    "dsc": "Combo1 con papitas",
+    "price": 10,
+    "src": "/Pizza.png",
+    "group": "Pizza"
+  }
+]

@@ -1,6 +1,6 @@
 import { ModeToggle } from "@/components/ThemeToggleButton/ThemeToggle";
 import Image from "next/image";
-import { NavMenu } from "../NavMenu/NavMenu";
+import { NavMenu } from "../NavMenu/NavMenu2";
 
 export const Navbar = () => {
   return (
