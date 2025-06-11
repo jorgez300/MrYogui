@@ -15,6 +15,7 @@ import {
   SheetDescription,
 } from "@/components/ui/sheet";
 import { Product } from "@/domain/models/Product";
+import { MoveUpRight } from "lucide-react";
 
 import Image from "next/image";
 
@@ -49,9 +50,20 @@ export const ProductCard = (props: ProductCardProps) => {
 
             <div className="grid grid-cols-2 gap-4 mt-4">
               <div className="align-content-start flex justify-start items-center">
+                <p className="text-end font-semibold text-lg">
+                  Precio: {props.product.price}$
+                </p>
+              </div>
+              <div className="align-content-end flex justify-end items-center">
                 <Sheet>
                   <SheetTrigger asChild>
-                    <Button>Detalle</Button>
+                    <Button
+                      variant="outline"
+                      size="icon"
+                      className="size-10 shadow-md"
+                    >
+                      <MoveUpRight />
+                    </Button>
                   </SheetTrigger>
                   <SheetContent className="w-[85vw] md:w-[50vw]">
                     <SheetHeader className="h-full">
@@ -86,9 +98,6 @@ export const ProductCard = (props: ProductCardProps) => {
                     </SheetHeader>
                   </SheetContent>
                 </Sheet>
-              </div>
-              <div className="align-content-end flex justify-end items-center">
-                <p className="text-end font-semibold text-lg">Precio: {props.product.price}$</p>
               </div>
             </div>
           </CardDescription>

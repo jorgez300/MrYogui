@@ -14,6 +14,7 @@ import {
   SheetDescription,
 } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
+import { SquareMenu } from "lucide-react";
 
 export const NavMenu = () => {
   const [groups, setgroups] = React.useState<ProductGroups[]>([]);
@@ -37,17 +38,23 @@ export const NavMenu = () => {
       }}
     >
       <SheetTrigger asChild>
-        <Button className="text-xl font-bold" onClick={() => setIsOpen(true)}>Menu</Button>
+        <Button variant="outline" size="icon" className="size-10 shadow-md"  onClick={() => setIsOpen(true)}>
+          <SquareMenu />
+        </Button>
       </SheetTrigger>
       <SheetContent side="left" className="w-[400px] sm:w-[540px]">
-        <SheetHeader>
+        <SheetHeader className="h-full">
           <SheetTitle></SheetTitle>
           <SheetDescription asChild>
-            <div className="h-full flex flex-col justify-center items-center gap-4 py-5 px-2">
+            <div className="h-full flex flex-col justify-evenly items-center gap-4 py-5 px-2">
               {groups.map((group, index) => (
                 <div key={index} className="w-full">
                   <h1 key={index} className="text-2xl font-bold">
-                    <Link key={index} href={`#productGrupo${group.id}`} onClick={() => setIsOpen(false)}>
+                    <Link
+                      key={index}
+                      href={`#productGrupo${group.id}`}
+                      onClick={() => setIsOpen(false)}
+                    >
                       <div className="text-xl font-bold py-4">{group.id}</div>
                     </Link>
                   </h1>

@@ -5,6 +5,7 @@ import { Navbar } from "./(modules)/main/components/NavBar/NavBar";
 import { ProductGroup } from "./(modules)/main/components/ProductGroup/ProductGroup";
 import { GetProductGroups } from "@/domain/services/ProductGroup.service";
 import { ProductGroups } from "@/domain/models/ProductGroup";
+import { OptionBar } from "./(modules)/main/components/OptionBar/OptionBar";
 
 export default function Home() {
   const [groups, setgroups] = useState<ProductGroups[]>([]);
@@ -32,6 +33,7 @@ export default function Home() {
           />
         ))}
       </div>
+      <OptionBar/>
     </>
   );
 }
