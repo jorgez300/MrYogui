@@ -55,7 +55,7 @@ export const NavMenu = () => {
                       href={`#productGrupo${group.id}`}
                       onClick={() => setIsOpen(false)}
                     >
-                      <div className="text-xl font-bold py-4">{group.id}</div>
+                      <div className="text-xl font-bold py-4">{group.dsc}</div>
                     </Link>
                   </h1>
                 </div>
