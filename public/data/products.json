@@ -1,134 +1,326 @@
 [
+
   {
-    "id": "Combo1",
-    "title": "Combos",
-    "dsc": "Combo1 con papitas",
-    "price": 10,
-    "src": "/Combos.png",
-    "group": "Combo"
+    "id": "BurgerClasica",
+    "title": "Burger clásica",
+    "dsc": "Carne, vegetales, queso fundido, jamón, papitas, salsas.",
+    "price": 5,
+    "src": "/Pizzara.png",
+    "group": "HAMBURGUESA"
   },
   {
-    "id": "Combo2",
-    "title": "Combos",
-    "dsc": "Combo1 con papitas",
-    "price": 10,
-    "src": "/Combos.png",
-    "group": "Combo"
+    "id": "BurgerEspecial",
+    "title": "Burger Especial",
+    "dsc": "PolloCrispy, Carne ó Chuleta Ah, Queso Kraft, Pepinillos, Jamón, Tocineta, Cebolla Caramelizada, Salsas de la casa, Papas Fritas.",
+    "price": 7,
+    "src": "/Pizzara.png",
+    "group": "HAMBURGUESA"
   },
   {
-    "id": "Combo3",
-    "title": "Combos",
-    "dsc": "Combo1 con papitas",
-    "price": 10,
-    "src": "/Combos.png",
-    "group": "Combo"
+    "id": "CesarBurguer",
+    "title": "Cesar Burguer",
+    "dsc": "PolloCrispy o Carne, Ensalada Cesar, Queso Kraft, Pepinillos, Jamón, Tocineta, Salsas, Papas Fritas.",
+    "price": 7.5,
+    "src": "/Pizzara.png",
+    "group": "HAMBURGUESA"
   },
   {
-    "id": "Combo4",
-    "title": "Combos",
-    "dsc": "Combo1 con papitas",
-    "price": 10,
-    "src": "/Combos.png",
-    "group": "Combo"
+    "id": "CrunchyBurguer",
+    "title": "Crunchy Burguer",
+    "dsc": "Pan Empanizado y Frito, PolloCrispy o Carne, Queso Kraft, Pepinillos, Jamón, Tocineta, Salsas de la casa, Papas Fritas.",
+    "price": 7.5,
+    "src": "/Pizzara.png",
+    "group": "HAMBURGUESA"
   },
   {
-    "id": "Combo5",
-    "title": "Combos",
-    "dsc": "Combo1 con papitas",
-    "price": 10,
-    "src": "/Combos.png",
-    "group": "Combo"
+    "id": "CangreBurguer",
+    "title": "Cangre Burguer",
+    "dsc": "Cangrejo (surimi), PolloCrispy, Coleslaw, Queso Kraft, Pepinillos, Tocineta, Cebolla caramelizada, Salsa de la casa, Papas Fritas.",
+    "price": 8,
+    "src": "/Pizzara.png",
+    "group": "HAMBURGUESA"
+  },
+  {
+    "id": "CheesseBacon",
+    "title": "Cheesse Bacon",
+    "dsc": "PolloCrispy o Carne, Doble Queso Kraft, Pepinillos, Champiñones Salteados, Extra de Tocineta, Cebolla caramelizada, Coleslaw, Salsa de la casa, Papas Fritas.",
+    "price": 8,
+    "src": "/Pizzara.png",
+    "group": "HAMBURGUESA"
+  },
+  {
+    "id": "BurgerMixta",
+    "title": "Burger Mixta",
+    "dsc": "PolloCrispy o Carne + Chuleta Ah, Queso Kraft, Pepinillos, Jamón, Tocineta, Cebolla Caramelizada, Salsas de la casa, Papas Fritas.",
+    "price": 9,
+    "src": "/Pizzara.png",
+    "group": "HAMBURGUESA"
   },
 
   {
-    "id": "Oferta1",
-    "title": "Combos",
-    "dsc": "Combo1 con papitas",
-    "price": 10,
-    "src": "/Ofertas.png",
-    "group": "Oferta"
+    "id": "Margarita",
+    "title": "Margarita",
+    "dsc": "Salsa napolitana, queso mozzarella, orégano",
+    "price": 7,
+    "src": "/Pizzara.png",
+    "group": "PIZZAS33CM"
   },
   {
-    "id": "Oferta2",
-    "title": "Combos",
-    "dsc": "Combo1 con papitas",
-    "price": 10,
-    "src": "/Ofertas.png",
-    "group": "Oferta"
+    "id": "4Quesos",
+    "title": "4 Quesos",
+    "dsc": "Salsa napolitana, queso mozzarella, queso parmesano, queso cheddar, queso crema",
+    "price": 7.5,
+    "src": "/Pizzara.png",
+    "group": "PIZZAS33CM"
   },
   {
-    "id": "Oferta3",
-    "title": "Combos",
-    "dsc": "Combo1 con papitas",
-    "price": 10,
-    "src": "/Ofertas.png",
-    "group": "Oferta"
+    "id": "JamonyQueso",
+    "title": "Jamon y Queso",
+    "dsc": "Salsa napolitana, queso mozzarella, jamón de pierna, orégano",
+    "price": 8,
+    "src": "/Pizzara.png",
+    "group": "PIZZAS33CM"
   },
   {
-    "id": "Oferta4",
-    "title": "Combos",
-    "dsc": "Combo1 con papitas",
-    "price": 10,
-    "src": "/Ofertas.png",
-    "group": "Oferta"
+    "id": "Vegetariana",
+    "title": "Vegetariana",
+    "dsc": "Salsa napolitana, queso mozzarella, pimentón, aceitunas negras, maíz, champiñones, cebolla, orégano",
+    "price": 7.5,
+    "src": "/Pizzara.png",
+    "group": "PIZZAS33CM"
   },
   {
-    "id": "Oferta5",
-    "title": "Combos",
-    "dsc": "Combo1 con papitas",
-    "price": 10,
-    "src": "/Ofertas.png",
-    "group": "Oferta"
-  },
-
-  {
-    "id": "Hamburguesa1",
-    "title": "Pizzas",
-    "dsc": "Combo1 con papitas",
-    "price": 10,
-    "src": "/burger.png",
-    "group": "Hamburguesa"
+    "id": "Pepperoni",
+    "title": "Pepperoni",
+    "dsc": "Salsa napolitana, queso mozzarella, pepperoni, orégano",
+    "price": 8.5,
+    "src": "/Pizzara.png",
+    "group": "PIZZAS33CM"
   },
   {
-    "id": "Hamburguesa2",
-    "title": "Pizzas",
-    "dsc": "Combo1 con papitas",
-    "price": 10,
-    "src": "/burger.png",
-    "group": "Hamburguesa"
-  },
-
-  {
-    "id": "HotDog1",
-    "title": "Hot Dogs 1",
-    "dsc": "Combo1 con papitas",
-    "price": 10,
-    "src": "/HotDog.png",
-    "group": "HotDog"
+    "id": "Primavera",
+    "title": "Primavera",
+    "dsc": "Salsa napolitana, queso mozzarella, jamon, tocineta, maiz, anchoas, orégano",
+    "price": 9,
+    "src": "/Pizzara.png",
+    "group": "PIZZAS33CM"
   },
   {
-    "id": "HotDog2",
-    "title": "Hot Dogs 2",
-    "dsc": "Combo1 con papitas",
-    "price": 10,
-    "src": "/HotDog.png",
-    "group": "HotDog"
+    "id": "MrYoguis",
+    "title": "MrYogui’s",
+    "dsc": "Salsa de la casa, Queso mozzarella, Calabresa, Pollo crispy, Tocineta, Orégano",
+    "price": 9.5,
+    "src": "/Pizzara.png",
+    "group": "PIZZAS33CM"
   },
 
   {
-    "id": "Pizza1",
-    "title": "Pizzas",
-    "dsc": "Combo1 con papitas",
-    "price": 10,
-    "src": "/Pizza.png",
-    "group": "Pizza"
+    "id": "ClubHouse",
+    "title": "Club House",
+    "dsc": "Pollo al grill, vegetales, salsas, Queso Kraft, Tocineta, Jamón, cebolla caramelizada, papas fritas",
+    "price": 7,
+    "src": "/Pizzara.png",
+    "group": "SANDWICHYENSALADA"
   },
   {
-    "id": "Pizza2",
-    "title": "Pizzas",
-    "dsc": "Combo1 con papitas",
-    "price": 10,
-    "src": "/Pizza.png",
-    "group": "Pizza"
+    "id": "SandwConCochino",
+    "title": "Sandw con Cochino",
+    "dsc": "Lechuga, Tomate, Queso, Salsas de la casa, Lechuga, Tomate, Papas Fritas",
+    "price": 7,
+    "src": "/Pizzara.png",
+    "group": "SANDWICHYENSALADA"
+  },
+  {
+    "id": "EnsaladaCesar",
+    "title": "Ensalada Cesar",
+    "dsc": "Lechuga, crutones, aderezo cesar, queso parmesano, tocineta",
+    "price": 6,
+    "src": "/Pizzara.png",
+    "group": "SANDWICHYENSALADA"
+  },
+  {
+    "id": "EnsaladaCesarPollo",
+    "title": "Ensalada Cesar c/ Pollo",
+    "dsc": "Pollo, lechuga, crutones, aderezo cesar, queso parmesano, tocineta",
+    "price": 8,
+    "src": "/Pizzara.png",
+    "group": "SANDWICHYENSALADA"
+  },
+  {
+    "id": "BBQ",
+    "title": "BBQ",
+    "dsc": "8 Piezas de alitas bañadas en salsa Bbq de la casa, ración de papas fritas",
+    "price": 6.5,
+    "src": "/Pizzara.png",
+    "group": "AlALITASDEPOLLOitas"
+  },
+  {
+    "id": "BuffaloWing",
+    "title": "Buffalo Wing",
+    "dsc": "8 Piezas de alitas bañadas en salsa Bbq RedHot (picantes), ración de papas fritas",
+    "price": 6.5,
+    "src": "/Pizzara.png",
+    "group": "ALITASDEPOLLO"
+  },
+  {
+    "id": "MoztazaMiel",
+    "title": "Moztaza & Miel",
+    "dsc": "8 Piezas de alitas bañadas en salsa miel mostaza, ración de papas fritas",
+    "price": 6.5,
+    "src": "/Pizzara.png",
+    "group": "ALITASDEPOLLO"
+  },
+  {
+    "id": "Mixtas",
+    "title": "Mixtas",
+    "dsc": "9 Piezas de alitas bañadas en salsas varias, ración de papas fritas",
+    "price": 7,
+    "src": "/Pizzara.png",
+    "group": "ALITASDEPOLLO"
+  },
+  {
+    "id": "SalchiPapas",
+    "title": "Salchi Papas",
+    "dsc": "300grs Papas fritas, salchichas, salsas tradicionales, queso fundido",
+    "price": 5.5,
+    "src": "/Pizzara.png",
+    "group": "PAPASFRITAS"
+  },
+  {
+    "id": "PapasMixtas",
+    "title": "Papas Mixtas",
+    "dsc": "350Grs de Papas fritas, pollo crispy, maiz, calabresa, salsas de la casa, queso fundido",
+    "price": 7,
+    "src": "/Pizzara.png",
+    "group": "PAPASFRITAS"
+  },
+  {
+    "id": "PapasMrYoguis",
+    "title": "Papas Mr Yogui´s",
+    "dsc": "400grs Papas Fritas, pollo crispy, carne asada, calabresa, tocineta, maiz, salsas de la casa, queso amarillo",
+    "price": 8.5,
+    "src": "/Pizzara.png",
+    "group": "PAPASFRITAS"
+  },
+  {
+    "id": "TradicionalPequeno",
+    "title": "Tradicional Pequeño",
+    "dsc": "Salchicha de pollo, repollos, zanahoria, papitas, salsas tradicionales, queso amarillo",
+    "price": 1.5,
+    "src": "/Pizzara.png",
+    "group": "HOTDOG"
+  },
+  {
+    "id": "TradicionalJumbo",
+    "title": "Tradicional Jumbo",
+    "dsc": "Salchicha de pollo, repollos, zanahoria, papitas, salsas tradicionales, queso año",
+    "price": 2.5,
+    "src": "/Pizzara.png",
+    "group": "HOTDOG"
+  },
+  {
+    "id": "Especial",
+    "title": "Especial",
+    "dsc": "Pan Jumbo, salchicha de pollo, repollos, zanahoria, papitas, salsas de la casa, pollo crispy, maíz, queso fundido, queso año",
+    "price": 4.5,
+    "src": "/Pizzara.png",
+    "group": "HOTDOG"
+  },
+  {
+    "id": "MrYoguis",
+    "title": "Mr Yogui`s",
+    "dsc": "Pan Jumbo, salchicha de pollo, repollos, zanahoria, papitas, salsas de la casa, pollo crispy, maíz, calabresa, pepinillos, cebolla caramelizada, queso amarillo",
+    "price": 5,
+    "src": "/Pizzara.png",
+    "group": "HOTDOG"
+  },
+  {
+    "id": "Pollo",
+    "title": "Pollo",
+    "dsc": "",
+    "price": 2,
+    "src": "/Pizzara.png",
+    "group": "EMPANADASSEN"
+  },
+  {
+    "id": "JamonyQueso",
+    "title": "Jamon y Queso",
+    "dsc": "",
+    "price": 2,
+    "src": "/Pizzara.png",
+    "group": "EMPANADASSEN"
+  },
+  {
+    "id": "Carne",
+    "title": "Carne",
+    "dsc": "",
+    "price": 2,
+    "src": "/Pizzara.png",
+    "group": "EMPANADASSEN"
+  },
+  {
+    "id": "SalchichaGuisada",
+    "title": "Salchicha Guisada",
+    "dsc": "",
+    "price": 2,
+    "src": "/Pizzara.png",
+    "group": "EMPANADASSEN"
+  },
+  {
+    "id": "Domino",
+    "title": "Domino",
+    "dsc": "Caraota con Queso",
+    "price": 2,
+    "src": "/Pizzara.png",
+    "group": "EMPANADASSEN"
+  },
+  {
+    "id": "PabellonCriollo",
+    "title": "Pabellon Criollo",
+    "dsc": "Carne o Pollo, Caraota, Platano y Queso blanco",
+    "price": 2.5,
+    "src": "/Pizzara.png",
+    "group": "EMPANADASESP"
+  },
+  {
+    "id": "Catira",
+    "title": "Catira",
+    "dsc": "Pollo con Queso Amarillo",
+    "price": 2.5,
+    "src": "/Pizzara.png",
+    "group": "EMPANADASESP"
+  },
+  {
+    "id": "CordonBlue",
+    "title": "Cordon Blue",
+    "dsc": "Pollo o Carne, Jamon y Queso Blanco",
+    "price": 2.5,
+    "src": "/Pizzara.png",
+    "group": "EMPANADASESP"
+  },
+  {
+    "id": "QuesoAmarilloTocineta",
+    "title": "Queso amarillo con Tocineta",
+    "dsc": "",
+    "price": 2.5,
+    "src": "/Pizzara.png",
+    "group": "EMPANADASESP"
+  },
+  {
+    "id": "Chorizo",
+    "title": "Chorizo",
+    "dsc": "",
+    "price": 2.5,
+    "src": "/Pizzara.png",
+    "group": "EMPANADASESP"
+  },
+  {
+    "id": "Yogui",
+    "title": "Yogui",
+    "dsc": "Carne, Pollo y Queso amarillo",
+    "price": 2.5,
+    "src": "/Pizzara.png",
+    "group": "EMPANADASESP"
   }
+
 ]

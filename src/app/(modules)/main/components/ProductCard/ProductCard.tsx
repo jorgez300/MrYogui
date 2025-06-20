@@ -38,14 +38,14 @@ export const ProductCard = (props: ProductCardProps) => {
             alt={`Gallery ${props.product.title}`}
             width={300}
             height={300}
-            className="w-full h-auto rounded-lg shadow-md"
+            className="w-full h-auto rounded-lg shadow-md mb-1"
           />
         </CardHeader>
-        <CardContent>
+        <CardContent className="flex flex-col h-full">
           <CardTitle className="text-xl font-bold">
             {props.product.title}
           </CardTitle>
-          <CardDescription className="">
+          <CardDescription>
             <p>{props.product.dsc ?? ""}</p>
 
             <div className="grid grid-cols-2 gap-4 mt-4">
@@ -85,11 +85,11 @@ export const ProductCard = (props: ProductCardProps) => {
                               {props.product.title}
                             </h1>
                           </div>
-                          <div>
+                          <div className="">
                             <p>{props.product.dsc ?? ""}</p>
                           </div>
                           <div>
-                            <p className="text-end font-semibold text-lg">
+                            <p className="self-end text-end font-semibold text-lg">
                               Precio: {props.product.price}$
                             </p>
                           </div>
