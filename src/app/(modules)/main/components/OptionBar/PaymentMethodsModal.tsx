@@ -12,11 +12,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import {
-  Card,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardHeader, CardTitle } from "@/components/ui/card";
 export const PaymentMethodsModal = () => {
   return (
     <Dialog>
@@ -37,18 +33,15 @@ export const PaymentMethodsModal = () => {
         <Card className="@container/card">
           <CardHeader>
             <CardTitle className="text-lg font-bold tabular-nums @[250px]/card:text-xl">
-              Pago Movil
+              Binance
             </CardTitle>
-
-            <div className="line-clamp-1 flex gap-2 font-medium ml-2">
-              Telefono: <span className="font-normal">12345678</span>
-            </div>
-            <div className="line-clamp-1 flex gap-2 font-medium ml-2">
-              Cedula: <span className="font-normal">12345678</span>
-            </div>
-            <div className="line-clamp-1 flex gap-2 font-medium ml-2">
-              Banco: <span className="font-normal">1234566</span>
-            </div>
+          </CardHeader>
+        </Card>
+        <Card className="@container/card">
+          <CardHeader>
+            <CardTitle className="text-lg font-bold tabular-nums @[250px]/card:text-xl">
+              Zinli
+            </CardTitle>
           </CardHeader>
         </Card>
 
@@ -59,33 +52,17 @@ export const PaymentMethodsModal = () => {
             </CardTitle>
 
             <div className="line-clamp-1 flex gap-2 font-medium ml-2">
-              Telefono: <span className="font-normal">12345678</span>
+              Telefono: <span className="font-normal">04129463878</span>
             </div>
             <div className="line-clamp-1 flex gap-2 font-medium ml-2">
-              Cedula: <span className="font-normal">12345678</span>
+              Rif: <span className="font-normal">J131035752</span>
             </div>
             <div className="line-clamp-1 flex gap-2 font-medium ml-2">
-              Banco: <span className="font-normal">1234566</span>
+              Banco: <span className="font-normal">0172 (Bancamiga)</span>
             </div>
           </CardHeader>
         </Card>
-                <Card className="@container/card">
-          <CardHeader>
-            <CardTitle className="text-lg font-bold tabular-nums @[250px]/card:text-xl">
-              Pago Movil
-            </CardTitle>
 
-            <div className="line-clamp-1 flex gap-2 font-medium ml-2">
-              Telefono: <span className="font-normal">12345678</span>
-            </div>
-            <div className="line-clamp-1 flex gap-2 font-medium ml-2">
-              Cedula: <span className="font-normal">12345678</span>
-            </div>
-            <div className="line-clamp-1 flex gap-2 font-medium ml-2">
-              Banco: <span className="font-normal">1234566</span>
-            </div>
-          </CardHeader>
-        </Card>
         <DialogFooter className="sm:justify-start">
           <DialogClose asChild>
             <Button type="button" variant="secondary">

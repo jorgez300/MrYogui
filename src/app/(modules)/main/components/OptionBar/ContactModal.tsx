@@ -1,6 +1,9 @@
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
-import { PhoneOutgoing } from "lucide-react";
+import {
+  ExternalLink,
+  PhoneOutgoing,
+} from "lucide-react";
 
 import {
   Dialog,
@@ -12,7 +15,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import { Card, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardHeader } from "@/components/ui/card";
 
 export const ContactModal = () => {
   return (
@@ -32,43 +35,55 @@ export const ContactModal = () => {
           <DialogDescription></DialogDescription>
         </DialogHeader>
         <Card className="@container/card">
-          <CardHeader>
-            <CardTitle className="text-lg font-bold tabular-nums @[250px]/card:text-xl">
-              Telefonos
-            </CardTitle>
-
+          <CardHeader className="px-1">
             <div className="line-clamp-1 flex gap-2 font-medium ml-2">
-              Telefono 1: <span className="font-normal">12345678</span>
+              Telefono 1: <span className="font-normal">0424-3708296</span>
             </div>
             <div className="line-clamp-1 flex gap-2 font-medium ml-2">
-              Telefono 2: <span className="font-normal">12345678</span>
+              Telefono 2: <span className="font-normal">0412-9463878</span>
             </div>
             <div className="line-clamp-1 flex gap-2 font-medium ml-2">
-              Telefono 3: <span className="font-normal">12345678</span>
+              Instagram:
+              <span className="font-normal w-full">
+                <a
+                  href="https://www.instagram.com/mryoguismokehouse?igsh=MTA2bmlha3ZpZWZycQ=="
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1"
+                >
+                  @mryoguismokehouse <ExternalLink className="ms-2" />
+                </a>
+              </span>
             </div>
           </CardHeader>
         </Card>
-
         <Card className="@container/card">
-          <CardHeader>
-            <CardTitle className="text-lg font-bold tabular-nums @[250px]/card:text-xl">
-              Direccion
-            </CardTitle>
-
+          <CardHeader className="px-1">
             <div className="line-clamp-1 flex gap-2 font-medium ml-2">
-              3801 University Lake Dr, Anchorage, Alaska
+              Lunes, Martes, Jueves, Viernes, Sabado, Domingo
+            </div>
+            <div className="line-clamp-1 flex gap-2 font-medium ml-2">
+              <span className="font-normal">
+                8:00am a 3:00pm - 6:00pm a 11:00pm
+              </span>
             </div>
           </CardHeader>
         </Card>
-        <Card className="@container/card" onClick={() => {
-            console.log('first')
+        <Card
+          className="@container/card"
+          onClick={() => {
             window.open(
               "https://maps.app.goo.gl/vshzbSy8jFmF1NgW7",
               "_blank",
               "noopener,noreferrer"
             );
-          }}>
-          <CardHeader>
+          }}
+        >
+          <CardHeader className="px-2">
+            <div className="line-clamp-1 flex gap-2 font-normal ml-2">
+              Av.Winston Churchill Sur, a 100mts de Semáforo El Vea al lado de
+              la antigua Farmacia Francisca Duarte, El Tigre, Edo. Anzoátegui
+            </div>
             <Image
               src={`/Mapa.png`}
               alt={`Gallery`}
