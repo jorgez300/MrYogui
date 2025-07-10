@@ -12,12 +12,10 @@ const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  webpack: (config, { isServer }) => {
-    if (isServer) {
-      config.plugins = [...config.plugins, new PrismaPlugin()];
-    }
-    return config;
+  experimental: {
+    serverComponentsExternalPackages: ['@prisma/client', 'prisma']
   },
+  output: 'standalone'
 };
 
 export default nextConfig;
