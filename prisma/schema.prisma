@@ -1,6 +1,7 @@
 generator client {
-  provider = "prisma-client-js"
-  output   = "../src/generated/prisma"
+  provider      = "prisma-client-js"
+  output        = "../src/generated/prisma"
+  binaryTargets = ["native", "rhel-openssl-3.0.x"]
 }
 
 datasource db {
@@ -19,7 +20,7 @@ model Categoria {
 model Producto {
   prod_id       String    @id @default(uuid())
   prod_nombre   String    @unique
-  prod_desc     String?    
+  prod_desc     String?
   prod_precio   Float
   prod_vigencia Boolean   @default(true)
   prod_img      String?
