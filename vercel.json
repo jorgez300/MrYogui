@@ -1,8 +1,7 @@
 {
-  "functions": {
-    "app/api/**/*.js": {
-      "includeFiles": "node_modules/@prisma/client/**",
-      "maxDuration": 30
+  "build": {
+    "env": {
+      "PRISMA_GENERATE_SKIP_AUTOINSTALL": "true"
     }
   }
 }
