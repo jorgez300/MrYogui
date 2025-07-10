@@ -154,6 +154,10 @@ const config = {
       },
       {
         "fromEnvVar": null,
+        "value": "linux-musl"
+      },
+      {
+        "fromEnvVar": null,
         "value": "rhel-openssl-3.0.x"
       }
     ],
@@ -181,8 +185,8 @@ const config = {
       }
     }
   },
-  "inlineSchema": "generator client {\n  provider      = \"prisma-client-js\"\n  output        = \"../src/generated/prisma\"\n  binaryTargets = [\"native\", \"rhel-openssl-3.0.x\"]\n}\n\ndatasource db {\n  provider = \"postgresql\"\n  url      = env(\"DATABASE_URL\")\n}\n\nmodel Categoria {\n  cat_id       String     @id @default(uuid())\n  cat_nombre   String     @unique\n  cat_vigencia Boolean    @default(true)\n  cat_orden    Int        @default(99)\n  productos    Producto[] @relation(\"CategoriaToProducto\")\n}\n\nmodel Producto {\n  prod_id       String    @id @default(uuid())\n  prod_nombre   String    @unique\n  prod_desc     String?\n  prod_precio   Float\n  prod_vigencia Boolean   @default(true)\n  prod_img      String?\n  cat_id        String\n  categoria     Categoria @relation(\"CategoriaToProducto\", fields: [cat_id], references: [cat_id])\n}\n",
-  "inlineSchemaHash": "d3c96265c8fdde929537b25e657f70a05e36eb0522ea5d0762fe3064da4a1e54",
+  "inlineSchema": "generator client {\n  provider      = \"prisma-client-js\"\n  output        = \"../src/generated/prisma\"\n  binaryTargets = [\"native\", \"linux-musl\", \"rhel-openssl-3.0.x\"]\n}\n\ndatasource db {\n  provider = \"postgresql\"\n  url      = env(\"DATABASE_URL\")\n}\n\nmodel Categoria {\n  cat_id       String     @id @default(uuid())\n  cat_nombre   String     @unique\n  cat_vigencia Boolean    @default(true)\n  cat_orden    Int        @default(99)\n  productos    Producto[] @relation(\"CategoriaToProducto\")\n}\n\nmodel Producto {\n  prod_id       String    @id @default(uuid())\n  prod_nombre   String    @unique\n  prod_desc     String?\n  prod_precio   Float\n  prod_vigencia Boolean   @default(true)\n  prod_img      String?\n  cat_id        String\n  categoria     Categoria @relation(\"CategoriaToProducto\", fields: [cat_id], references: [cat_id])\n}\n",
+  "inlineSchemaHash": "8f3e4ac488dd352db1786b316b0eec430594d73bc65d2838b8b8c346578f4420",
   "copyEngine": true
 }
 config.dirname = '/'
