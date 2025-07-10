@@ -14,17 +14,28 @@ import {
   SheetTitle,
   SheetDescription,
 } from "@/components/ui/sheet";
-import { Product } from "@/domain/models/Product";
+import { Producto } from "@/domain/models/Producto";
 import { MoveUpRight } from "lucide-react";
 
 import Image from "next/image";
 
 interface ProductCardProps {
   index: number;
-  product: Product;
+  product: Producto;
 }
 
 export const ProductCard = (props: ProductCardProps) => {
+  function ObtieneImagen(src: string | null | undefined): string {
+    if (src === null || src === undefined || src === "" || src === "null") {
+      return "https://compartidosstorage1.blob.core.windows.net/mryogui/base2.png";
+    } else {
+      if (src?.includes("base64")) {
+        return src;
+      }
+      return `https://compartidosstorage1.blob.core.windows.net/mryogui/${src}`;
+    }
+  }
+
   return (
     <>
       <Card
@@ -34,8 +45,8 @@ export const ProductCard = (props: ProductCardProps) => {
         <CardHeader>
           <Image
             key={props.index}
-            src={props.product.src}
-            alt={`Gallery ${props.product.title}`}
+            src={ObtieneImagen(props.product.prod_img)}
+            alt={`Gallery ${props.product.prod_nombre}`}
             width={300}
             height={300}
             className="w-full h-auto rounded-lg shadow-md mb-1"
@@ -43,15 +54,15 @@ export const ProductCard = (props: ProductCardProps) => {
         </CardHeader>
         <CardContent className="flex flex-col h-full">
           <CardTitle className="text-xl font-bold">
-            {props.product.title}
+            {props.product.prod_nombre}
           </CardTitle>
           <CardDescription>
-            <p>{props.product.dsc ?? ""}</p>
+            <p>{props.product.prod_desc ?? ""}</p>
 
             <div className="grid grid-cols-2 gap-4 mt-4">
               <div className="align-content-start flex justify-start items-center">
                 <p className="text-end font-semibold text-lg">
-                  Precio: {props.product.price}$
+                  Precio: {props.product.prod_precio}$
                 </p>
               </div>
               <div className="align-content-end flex justify-end items-center">
@@ -73,8 +84,8 @@ export const ProductCard = (props: ProductCardProps) => {
                           <div>
                             <Image
                               key={props.index}
-                              src={props.product.src}
-                              alt={`Gallery ${props.index}`}
+                              src={ObtieneImagen(props.product.prod_img)}
+                              alt={`Gallery ${props.product.prod_nombre}`}
                               width={300}
                               height={300}
                               className="w-full h-auto rounded-lg shadow-md"
@@ -82,15 +93,15 @@ export const ProductCard = (props: ProductCardProps) => {
                           </div>
                           <div>
                             <h1 className="text-2xl font-bold">
-                              {props.product.title}
+                              {props.product.prod_nombre}
                             </h1>
                           </div>
                           <div className="">
-                            <p>{props.product.dsc ?? ""}</p>
+                            <p>{props.product.prod_desc ?? ""}</p>
                           </div>
                           <div>
                             <p className="self-end text-end font-semibold text-lg">
-                              Precio: {props.product.price}$
+                              Precio: {props.product.prod_precio}$
                             </p>
                           </div>
                         </div>

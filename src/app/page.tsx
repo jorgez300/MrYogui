@@ -3,15 +3,16 @@
 import { useEffect, useState } from "react";
 import { Navbar } from "./(modules)/main/components/NavBar/NavBar";
 import { ProductGroup } from "./(modules)/main/components/ProductGroup/ProductGroup";
-import { GetProductGroups } from "@/domain/services/ProductGroup.service";
-import { ProductGroups } from "@/domain/models/ProductGroup";
+
 import { OptionBar } from "./(modules)/main/components/OptionBar/OptionBar";
+import { Categoria } from "@/domain/models/Categoria";
+import { GetCategoriasVigentesConProductos } from "@/domain/services/Categoria.service";
 
 export default function Home() {
-  const [groups, setgroups] = useState<ProductGroups[]>([]);
+  const [groups, setgroups] = useState<Categoria[]>([]);
 
   useEffect(() => {
-    GetProductGroups()
+    GetCategoriasVigentesConProductos()
       .then((data) => {
         setgroups(data);
       })
@@ -28,8 +29,8 @@ export default function Home() {
           <ProductGroup
             key={index}
             index={index}
-            id={group.id}
-            dsc={group.dsc}
+            id={group.cat_id}
+            dsc={group.cat_nombre}
           />
         ))}
       </div>

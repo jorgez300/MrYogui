@@ -3,8 +3,11 @@ import { useEffect, useState } from "react";
 
 import { Separator } from "@/components/ui/separator";
 import { ProductCard } from "../ProductCard/ProductCard";
-import { Product } from "@/domain/models/Product";
-import { GetProducts } from "@/domain/services/Product.service";
+import { Producto } from "@/domain/models/Producto";
+import {
+  GetListaProductos,
+  GetListaProductosByCategoria,
+} from "@/domain/services/Producto.service";
 
 interface ProductGroupProps {
   index: number;
@@ -13,10 +16,10 @@ interface ProductGroupProps {
 }
 
 export const ProductGroup = (props: ProductGroupProps) => {
-  const [products, setproducts] = useState<Product[]>([]);
+  const [products, setproducts] = useState<Producto[]>([]);
 
   useEffect(() => {
-    GetProducts(props.id)
+    GetListaProductosByCategoria(props.id)
       .then((data) => {
         setproducts(data);
       })

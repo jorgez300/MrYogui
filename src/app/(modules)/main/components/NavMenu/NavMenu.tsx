@@ -11,14 +11,15 @@ import {
   NavigationMenuList,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
-import { ProductGroups } from "@/domain/models/ProductGroup";
-import { GetProductGroups } from "@/domain/services/ProductGroup.service";
+import { GetCategoriasVigentesConProductos } from "@/domain/services/Categoria.service";
+import { Categoria } from "@/domain/models/Categoria";
+
 
 export const NavMenu = () => {
-  const [groups, setgroups] = React.useState<ProductGroups[]>([]);
+  const [groups, setgroups] = React.useState<Categoria[]>([]);
 
   React.useEffect(() => {
-    GetProductGroups()
+    GetCategoriasVigentesConProductos()
       .then((data) => {
         setgroups(data);
       })
@@ -40,8 +41,8 @@ export const NavMenu = () => {
               <li className="w-full">
                 {groups.map((group, index) => (
                   <NavigationMenuLink key={index} asChild>
-                    <Link href={`#productGrupo${group.id}`}>
-                      <div className="text-xl font-bold py-4">{group.id}</div>
+                    <Link href={`#productGrupo${group.cat_id}`}>
+                      <div className="text-xl font-bold py-4">{group.cat_nombre}</div>
                     </Link>
                   </NavigationMenuLink>
                 ))}

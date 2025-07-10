@@ -2,9 +2,6 @@
 
 import * as React from "react";
 import Link from "next/link";
-
-import { ProductGroups } from "@/domain/models/ProductGroup";
-import { GetProductGroups } from "@/domain/services/ProductGroup.service";
 import {
   Sheet,
   SheetTrigger,
@@ -15,13 +12,15 @@ import {
 } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import { SquareMenu } from "lucide-react";
+import { GetCategoriasVigentesConProductos } from "@/domain/services/Categoria.service";
+import { Categoria } from "@/domain/models/Categoria";
 
 export const NavMenu = () => {
-  const [groups, setgroups] = React.useState<ProductGroups[]>([]);
+  const [groups, setgroups] = React.useState<Categoria[]>([]);
   const [isOpen, setIsOpen] = React.useState(false);
 
   React.useEffect(() => {
-    GetProductGroups()
+    GetCategoriasVigentesConProductos()
       .then((data) => {
         setgroups(data);
       })
@@ -38,7 +37,12 @@ export const NavMenu = () => {
       }}
     >
       <SheetTrigger asChild>
-        <Button variant="outline" size="icon" className="size-10 shadow-md"  onClick={() => setIsOpen(true)}>
+        <Button
+          variant="outline"
+          size="icon"
+          className="size-10 shadow-md"
+          onClick={() => setIsOpen(true)}
+        >
           <SquareMenu />
         </Button>
       </SheetTrigger>
@@ -52,10 +56,12 @@ export const NavMenu = () => {
                   <h1 key={index} className="text-2xl font-bold">
                     <Link
                       key={index}
-                      href={`#productGrupo${group.id}`}
+                      href={`#productGrupo${group.cat_id}`}
                       onClick={() => setIsOpen(false)}
                     >
-                      <div className="text-xl font-bold py-4">{group.dsc}</div>
+                      <div className="text-xl font-bold py-4">
+                        {group.cat_nombre}
+                      </div>
                     </Link>
                   </h1>
                 </div>
