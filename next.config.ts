@@ -12,7 +12,7 @@ const nextConfig: NextConfig = {
     ignoreDuringBuilds: true,
   },
   serverExternalPackages: ["@prisma/client", "prisma"],
-  output: "standalone",
+  //output: "standalone",
 };
 
 export default nextConfig;
