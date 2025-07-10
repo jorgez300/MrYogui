@@ -3,5 +3,6 @@
     "env": {
       "PRISMA_GENERATE_SKIP_AUTOINSTALL": "true"
     }
-  }
+  },
+  "buildCommand": "prisma generate && npm run build"
 }

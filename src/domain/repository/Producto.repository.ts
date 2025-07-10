@@ -1,5 +1,4 @@
-import { PrismaClient, Producto } from "@/generated/prisma";
-import { ProductoCreateInput } from "../models/Producto";
+import { PrismaClient, Producto } from '@prisma/client'
 
 const prisma = new PrismaClient();
 
