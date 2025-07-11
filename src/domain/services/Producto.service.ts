@@ -70,6 +70,7 @@ export const CambiarVigencia = async (data: Producto) => {
   const existingProduct = await repo.findById(data.prod_id);
 
   if (existingProduct) {
+    data.prod_vigencia = !existingProduct.prod_vigencia;
     await repo.update(data);
   } else {
     return;
